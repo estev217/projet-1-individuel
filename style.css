@@ -11,6 +11,7 @@ body {
 h2 {
     font-family: 'Butterfly Kids', cursive;
     font-size: 3em;
+    margin-top: 2%;
     margin-bottom: 0px;
 }
 
@@ -20,6 +21,8 @@ section {
     justify-content: center;
     align-items: center;
     margin: 5% 0% 5% 0%;
+    background-color: olivedrab;
+    border-radius: 10%;
 }
 
 article {
@@ -27,9 +30,6 @@ article {
     flex-flow: column-reverse nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: olivedrab;
-    width: 75%;
-    border-radius: 10%;
 }
 
 article div {
@@ -46,6 +46,21 @@ div p {
 
 div img {
     margin: 0% 0% 13% 0%;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 2% 5% 5% 5%;
+}
+
+form * {
+    padding: 3%;
+}
+
+form button {
+    margin-top: 5%;
 }
 
 /* END David */
