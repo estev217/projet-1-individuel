@@ -1,6 +1,7 @@
 # Wild Code School - Projet Semaine 1 - Site Vitrine
 
-## Equipe
+
+## Equipe
 
 * Kévin Parage
 * Estevao Fernandes
