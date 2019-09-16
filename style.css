@@ -1,5 +1,53 @@
 /* START David */
 
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(52,65,52);
+}
+
+body {
+}
+
+h2 {
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+section {
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0% 5% 0%;
+}
+
+article {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: olivedrab;
+    width: 75%;
+    border-radius: 10%;
+}
+
+article div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+div p {
+    margin: 2% 5% 5% 5%;
+}
+
+div img {
+    margin: 0% 0% 13% 0%;
+}
+
 /* END David */
 
 /* START Kévin */
