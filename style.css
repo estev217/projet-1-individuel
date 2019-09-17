@@ -72,7 +72,7 @@
 
     /* IMAGE RELATED CSS START HERE */
 
-    img {
+    .div_img img {
         width:  150px;
         height: 150px;
         padding-bottom: 8%;
@@ -87,8 +87,7 @@
     form {
         display:        flex;
         flex-direction: column;
-        align-items:    stretch;
-        padding:        3% 10% 3% 10%;
+        align-items:    stretch;        /* padding:        3% 10% 3% 10%; */
     }
 
     form * {
@@ -188,6 +187,15 @@
 /* END David */
 
 /* START Kévin */
+
+/* Home section code  */
+.section_home {
+    height: 100vh;
+    background-image: url(https://www.au-cheval-noir.restaurant/wp-content/uploads/2018/12/Restaurant-Au-Cheval-Noir-Herrlisheim_Photos-17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .toggle-nav{
     background-color:black;
     display: none;
@@ -205,11 +213,6 @@ ul{
     justify-content: flex-end;
 }
 
-.titre{
-    width: 100%;
-
-}
-
 a:link{
     text-decoration: none;
 }
@@ -219,15 +222,11 @@ li{
     width: 20%;
     text-align: center;
     font-size: 2vw;
-    
 }
 
 a{
     color: white;
     transition: transform .2s;
-    width: 100px;
-    height: 100px;
-    
 }
 
 li div{
@@ -237,7 +236,6 @@ li div{
 li div:hover{
     transform:scale(1.10) translate(0px, 5px);
     translate: 100px;
-
 }
 
 h1{
@@ -255,9 +253,8 @@ ul{
     position: absolute;
     top: 0%;
     left: 10%;
-    width: 100%;
     text-align: left;
-    font-size: 3vw;
+    font-size: 1vw;
     font-family: 'Butterfly Kids', cursive;
     font-weight: bold;
     color: white;
