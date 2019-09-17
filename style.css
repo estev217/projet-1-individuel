@@ -1,60 +1,180 @@
 /* START David */
 
-html {
-    scroll-behavior: smooth;
-    background-color: rgb(12,15,12);
-    color: white;
-    height: 100%;
-}
+/* GLOBAL CSS START HERE ----------------------------------------------------------------------- */
 
-body {
-    height: 100%;
-    margin: 0px;
-}
+    html {
+        scroll-behavior:    smooth;
+        background-color:   rgb(12,15,12);
+        color:              white;
+    }
 
-h2 {
-    font-family: 'Butterfly Kids', cursive;
-    font-size: 3em;
-    text-align: center;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+    body {
+        margin:             0px;
+    }
 
-section {
-    width: 100%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
+/* GLOBAL CSS END HERE ------------------------------------------------------------------------- */
 
-section article {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
+/* PARALLAX RELATED CSS START HERE ------------------------------------------------------------- */
 
-h3 {
-    text-align: center;
-}
+    .parallax {
+        background-image:      url('https://c.pxhere.com/photos/14/f8/photo-76183.jpg!d');
+        height:                25%; 
+        width:                 100%;
+        background-attachment: fixed;
+        background-position:   center;
+        background-repeat:     no-repeat;
+        background-size:       cover;
+        display:               flex;
+        align-items:           center;
+        justify-content:       center;
+    }
 
-p {
-    text-align: center;
-}
+/* PARALLAX RELATED CSS END HERE --------------------------------------------------------------- */
 
-.div_img {
-    padding-bottom: 5%;
-}
+/* TITLE RELATED CSS START HERE ---------------------------------------------------------------- */
 
-.parallax {
-    background-image: url('https://c.pxhere.com/photos/14/f8/photo-76183.jpg!d');
-    height: 50%; 
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    h2 {
+        font-family: 'Butterfly Kids', cursive;
+        font-size:   3em;
+        text-align:  center;
+        text-shadow: -1px -1px 0 #000, 
+                     1px -1px 0 #000, 
+                     -1px 1px 0 #000, 
+                     1px 1px 0 #000;
+    }
+
+    h3 {
+        text-align:  center;
+        padding:     0% 2% 0% 2%;
+    }
+
+/* TITLE RELATED CSS END HERE ------------------------------------------------------------------ */
+
+/* SECTION AND ARTICLE RELATED CSS START HERE -------------------------------------------------- */
+
+    section {
+        padding-top:    1%;
+        padding-bottom: 1%;
+    }
+
+    section article {
+        display:         flex;
+        flex-direction:  column-reverse;
+        align-items:     center;
+        justify-content: space-between;
+    }
+
+    p {
+        text-align:      center;
+        padding-left:    5%;
+        padding-right:   5%;
+    }
+
+    /* IMAGE RELATED CSS START HERE */
+
+    img {
+        width:  150px;
+        height: 150px;
+    }
+
+    /* IMAGE RELATED CSS END HERE */
+
+/* SECTION AND ARTICLE RELATED CSS END HERE ---------------------------------------------------- */
+
+/* FORM RELATED CSS START HERE ----------------------------------------------------------------- */
+
+    form {
+        display:        flex;
+        flex-direction: column;
+        align-items:    stretch;
+        padding:        3% 10% 3% 10%;
+    }
+
+    form * {
+        margin:         1%;
+    }
+
+    form textarea {
+        padding-bottom: 15%;
+    }
+
+    form button {
+        margin:         3% 0% 3% 50%;
+    }
+
+/* FORM RELATED CSS END HERE ------------------------------------------------------------------- */
+
+/* MAP SECTION RELATED CSS START HERE ---------------------------------------------------------- */
+
+    .div_iframe iframe {
+        display: none;
+    }
+
+/* MAP SECTION RELATED CSS END HERE ------------------------------- */
+
+/* MEDIA QUERIES START HERE -------------------------------------------------------------------- */
+
+    @media only screen and (min-width: 961px) {
+
+        /* SECTION AND ARTICLE RELATED CSS START HERE --------------- */
+
+            section article {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .article_even {
+                flex-direction: row;
+            }
+
+            .article_odd {
+                flex-direction: row-reverse;
+            }
+
+            section article div {
+                display: flex;
+                justify-content: center;
+                margin: 0% 3% 0% 3%;
+            }
+
+            .div_txt {
+                flex-flow: column nowrap;
+            }
+
+        /* SECTION AND ARTICLE RELATED CSS END HERE ----------------- */
+
+        /* MAP SECTION CSS START HERE ------------------------------- */
+
+            .div_iframe iframe {
+            display: inline;
+            }
+
+            .div_iframe a {
+            display: none;
+            }
+
+        /* MAP SECTION CSS END HERE --------------------------------- */
+
+        /* FORM RELATED CSS START HERE ------------------------------ */
+
+            form {
+                padding: 0;
+                margin: 0% 30% 0% 30%;
+            }
+
+            form * {
+                margin: 5px 0 5px 0;
+            }
+
+            label {
+                margin-right: 10px;
+            }
+
+        /* FORM RELATED CSS END HERE -------------------------------- */
+
+    }
+
+/* MEDIA QUERIES END HERE ---------------------------------------------------------------------- */
 
 /* END David */
 
