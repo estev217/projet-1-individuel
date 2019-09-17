@@ -75,6 +75,7 @@
     img {
         width:  150px;
         height: 150px;
+        padding-bottom: 8%;
     }
 
     /* IMAGE RELATED CSS END HERE */
@@ -142,6 +143,14 @@
             }
 
         /* SECTION AND ARTICLE RELATED CSS END HERE ----------------- */
+
+        /* IMAGE RELATED CSS START HERE */
+
+            img {
+                padding-bottom: 0%;
+            }
+
+    /* IMAGE RELATED CSS END HERE */
 
         /* MAP SECTION CSS START HERE ------------------------------- */
 
