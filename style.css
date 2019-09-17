@@ -2,66 +2,59 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: rgb(52,65,52);
+    background-color: rgb(12,15,12);
+    color: white;
+    height: 100%;
 }
 
 body {
+    height: 100%;
+    margin: 0px;
 }
 
 h2 {
     font-family: 'Butterfly Kids', cursive;
     font-size: 3em;
-    margin-top: 2%;
-    margin-bottom: 0px;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 section {
-    display: flex;
-    flex-flow: column nowrap; 
-    justify-content: center;
-    align-items: center;
-    margin: 5% 0% 5% 0%;
-    background-color: olivedrab;
-    border-radius: 10%;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-article {
+section article {
     display: flex;
-    flex-flow: column-reverse nowrap;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
-article div {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
+h3 {
     text-align: center;
 }
 
-div p {
-    margin: 2% 5% 5% 5%;
+p {
+    text-align: center;
 }
 
-div img {
-    margin: 0% 0% 13% 0%;
+.div_img {
+    padding-bottom: 5%;
 }
 
-form {
+.parallax {
+    background-image: url('https://c.pxhere.com/photos/14/f8/photo-76183.jpg!d');
+    height: 50%; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    margin: 2% 5% 5% 5%;
-}
-
-form * {
-    padding: 3%;
-}
-
-form button {
-    margin-top: 5%;
-}
+    align-items: center;
+    justify-content: center;
+  }
 
 /* END David */
 
