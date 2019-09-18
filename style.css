@@ -10,7 +10,7 @@
 
     body {
         margin:             0px;
-        overflow-X: hidden;
+        overflow-X:         hidden;
     }
 
 /* GLOBAL CSS END HERE ------------------------------------------------------------------------- */
@@ -42,13 +42,17 @@
         background-image:      url('images/bistro_bastide.jpg');
     }
 
+    .contact_us {
+        background-image:      url('images/telephone.jpg');   
+    }
+
 /* PARALLAX RELATED CSS END HERE --------------------------------------------------------------- */
 
 /* TITLE RELATED CSS START HERE ---------------------------------------------------------------- */
 
     h2 {
-font-family: 'Butterfly Kids', cursive;
-font-size:   3em;
+        font-family: 'Butterfly Kids', cursive;
+        font-size:   3em;
         text-align:  center;
         text-shadow: -1px -1px 0 #000, 
                      1px -1px 0 #000, 
@@ -90,8 +94,10 @@ font-size:   3em;
         font-family:     'Patrick Hand', cursive;
         font-size:       1.3em;
     }
+    
+/* SECTION AND ARTICLE RELATED CSS END HERE ---------------------------------------------------- */
 
-    /* IMAGE RELATED CSS START HERE */
+/* IMAGE RELATED CSS START HERE ---------------------------------------------------------------- */
 
     .div_img img {
         width:         10em;
@@ -101,41 +107,58 @@ font-size:   3em;
         margin-bottom: 10%;
     }
 
-    /* IMAGE RELATED CSS END HERE */
+/* IMAGE RELATED CSS END HERE ------------------------------------------------------------------ */
 
-/* SECTION AND ARTICLE RELATED CSS END HERE ---------------------------------------------------- */
 
 /* FORM RELATED CSS START HERE ----------------------------------------------------------------- */
 
     form {
-        display:        flex;
-        flex-direction: column;
-        align-items:    stretch;        /* padding:        3% 10% 3% 10%; */
+        display:             flex;
+        flex-direction:      column;
+        align-items:         stretch;        
+        margin:              3% 10% 3% 10%;
     }
 
     form * {
-        margin:         1%;
-        font-family:    'Patrick Hand', cursive;
+        margin:              1%;
+        font-family:         'Patrick Hand', cursive;
     }
 
     form textarea {
-        padding-bottom: 15%;
+        padding-bottom:      15%;
     }
 
     form button {
-        margin:         3% 1% 3% 70%;
-        font-family:    'Butterfly Kids', cursive;
-        color:        black;
-        font-weight: bold;
-        font-size: 1.8em;
+        font-family:         'Butterfly Kids', cursive;
+        color:             black;
+        font-weight:         bold;
+        font-size:           1.8em;
+        transition-duration: 0.8s;
+    }
+
+    form button:hover {
+        background-color:  white;
     }
 
 /* FORM RELATED CSS END HERE ------------------------------------------------------------------- */
 
 /* MAP SECTION RELATED CSS START HERE ---------------------------------------------------------- */
 
+    .div_iframe {
+        padding-bottom:       3%;
+    }
+
     .div_iframe iframe {
-        display: none;
+        display:              none;
+    }
+
+    .div_iframe a {
+        color:              white;
+        text-decoration-line: none;
+        text-shadow:          -1px -1px 0 #000, 
+                              1px -1px 0 #000, 
+                              -1px 1px 0 #000, 
+                              1px 1px 0 #000;
     }
 
 /* MAP SECTION RELATED CSS END HERE ------------------------------- */
@@ -217,27 +240,26 @@ font-size:   3em;
         /* FORM RELATED CSS START HERE ------------------------------ */
 
             form {
-                padding:      0;
-                margin:       0% 30% 0% 30%;
+                padding:             0;
+                margin:              0% 30% 0% 30%;
             }
 
             form * {
-                margin:       5px 0 5px 0;
+                margin:              5px 0 5px 0;
             }
 
             label {
-                margin-right: 10px;
+                margin-right:        10px;
             }
 
             form button {
-                margin: 3% 0% 3% 70%;
-                position: relative;
-                -webkit-transition-duration: 2s;
+                margin:              3% 0% 3% 70%;
+                position:            relative;
                 transition-duration: 2s;
             }
 
             form button:hover {
-                background-color: white;
+                background-color:  white;
             }
 
 
