@@ -59,7 +59,7 @@
         text-align:  center;
         padding:     0% 2% 0% 2%;
         font-family: 'Butterfly Kids', cursive;
-        font-size: 2em;
+        font-size:   2em;
     }
 
 /* TITLE RELATED CSS END HERE ------------------------------------------------------------------ */
@@ -67,8 +67,8 @@
 /* SECTION AND ARTICLE RELATED CSS START HERE -------------------------------------------------- */
 
     section {
-        padding-top:    1%;
-        padding-bottom: 1%;
+        padding-top:     1%;
+        padding-bottom:  1%;
     }
 
     section article {
@@ -78,21 +78,26 @@
         justify-content: space-between;
     }
 
+    .article_intro {
+        flex-direction:  column;
+    }
+
     article p {
         text-align:      center;
         padding-left:    5%;
         padding-right:   5%;
-        font-family: 'Patrick Hand', cursive;
-        font-size: 1.3em;
+        font-family:     'Patrick Hand', cursive;
+        font-size:       1.3em;
     }
 
     /* IMAGE RELATED CSS START HERE */
 
     .div_img img {
-        width:  10em;
-        height: 10em;
-        border-style: solid;
-        border-width: 1px;
+        width:         10em;
+        height:        10em;
+        border-style:  solid;
+        border-width:  1px;
+        margin-bottom: 10%;
     }
 
     /* IMAGE RELATED CSS END HERE */
@@ -127,9 +132,6 @@
         display: none;
     }
 
-    .div_iframe a {
-    }
-
 /* MAP SECTION RELATED CSS END HERE ------------------------------- */
 
 /* MEDIA QUERIES START HERE -------------------------------------------------------------------- */
@@ -139,38 +141,54 @@
         /* SECTION AND ARTICLE RELATED CSS START HERE --------------- */
 
             section article {
-                display: flex;
+                display:         flex;
                 justify-content: flex-start;
             }
 
+            .article_intro {
+                flex-direction:  column;
+            }
+
             .article_even {
-                flex-direction: row;
+                flex-direction:  row;
             }
 
             .article_odd {
-                flex-direction: row-reverse;
+                flex-direction:  row-reverse;
             }
 
             section article div {
-                display: flex;
+                display:         flex;
                 justify-content: center;
-                margin: 0% 3% 0% 3%;
+                margin:          0% 3% 0% 3%;
             }
 
             .div_txt {
-                flex-flow: column nowrap;
+                flex-flow:       column nowrap;
             }
 
         /* SECTION AND ARTICLE RELATED CSS END HERE ----------------- */
 
+        /* TITLE RELATED CSS START HERE */
+
+            h3 {
+                text-align:  center;
+                margin:      0%;
+                font-family: 'Butterfly Kids', cursive;
+                font-size:   2em;
+            }
+
+        /* TITLE RELATED CSS END HERE */
+
         /* IMAGE RELATED CSS START HERE */
 
             .div_img img {
-                border-radius: 50%;
-                border-width: 3px;
-                width:  20em;
-                height: 20em;
+                border-radius:  50%;
+                border-width:   3px;
+                width:          20em;
+                height:         20em;
                 padding-bottom: 0%;
+                margin-bottom:  0%;
             }
 
     /* IMAGE RELATED CSS END HERE */
@@ -178,14 +196,14 @@
         /* MAP SECTION CSS START HERE ------------------------------- */
 
             .div_iframe iframe {
-            display: inline;
+            display:      inline;
             border-style: solid;
             border-width: 1px;
             border-color: red;
             }
 
             .div_iframe a {
-            display: none;
+            display:      none;
             }
 
         /* MAP SECTION CSS END HERE --------------------------------- */
@@ -193,12 +211,12 @@
         /* FORM RELATED CSS START HERE ------------------------------ */
 
             form {
-                padding: 0;
-                margin: 0% 30% 0% 30%;
+                padding:      0;
+                margin:       0% 30% 0% 30%;
             }
 
             form * {
-                margin: 5px 0 5px 0;
+                margin:       5px 0 5px 0;
             }
 
             label {
