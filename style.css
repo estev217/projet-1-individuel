@@ -361,43 +361,67 @@ h1{
     align-items: center;
     justify-content: center;
     background-color: rgb(56, 47, 47);
-    height: 300px;
+    padding-top: 10px;
     font-size: 17px;
 }
+
+.plan_site{
+    padding-bottom: 5px;
+}
+
 .footer a:hover {
-    text-decoration: underline overline white;
+    text-decoration: dotted underline overline white;
 }
 .footer a, footer p {
     text-decoration: none;
     color: rgb(177, 177, 177);
 }
+.desktop-footer {
+    display: none;
+}
+.footer-address {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 .twitter-icon img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
 }
 .facebook-icon img{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
 }
 
 @media screen and (min-width:961px) {
 .footer {
-    font-size: 20px;
-    height: 150px;
+    font-size: 17px;
+    height: 130px;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 10px;
 }
-.strong-text {
-    font-weight: bold;
+
+.plan_site{
+    padding-bottom: 0px;
 }
 .emphasis-text {
     font-style: italic;
+}
+.desktop-footer {
+    display: contents;
+}
+.footer-address {
+    width: 40vw;
 }
 .twitter-icon img {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 .twitter-icon:hover img {
     -webkit-transform: rotate(-15deg);
     transform: rotate(-15deg);
@@ -406,7 +430,6 @@ h1{
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 .facebook-icon:hover img {
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
