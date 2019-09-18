@@ -4,7 +4,7 @@
 
     html {
         scroll-behavior:    smooth;
-        background-color:   rgb(12,15,12);
+        background-color:   rgb(66, 25, 25);
         color:              white;
     }
 
@@ -510,45 +510,77 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(56, 47, 47);
-    height: 300px;
+    background-color: rgb(46, 18, 18);
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-size: 17px;
 }
-.footer a:hover {
-    text-decoration: underline overline white;
-}
 .footer a, footer p {
-    text-decoration: none;
     color: rgb(177, 177, 177);
 }
-.twitter-icon img{
-    height: 50px;
-    width: 50px;
+.desktop-footer {
+    display: none;
 }
-.facebook-icon img{
-    height: 50px;
-    width: 50px;
+.mobile-footer {
+    padding: 5px;
+}
+.footer a {
+    width: 200px;
+}
+.footer-address {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+.twitter-icon img {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.facebook-icon img {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.app-link {
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (min-width:961px) {
 .footer {
-    font-size: 20px;
-    height: 150px;
+    font-size: 17px;
+    height: 200px;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 0px 10px 20px 10px;
 }
-.strong-text {
-    font-weight: bold;
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin-top: 20px;
 }
 .emphasis-text {
     font-style: italic;
+}
+.desktop-footer {
+    display: contents;
+}
+.mobile-footer {
+    padding: 0px;
+}
+.desktop-version {
+    display: none;
 }
 .twitter-icon img {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 .twitter-icon:hover img {
     -webkit-transform: rotate(-15deg);
     transform: rotate(-15deg);
@@ -557,10 +589,12 @@ h1{
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 .facebook-icon:hover img {
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+.app-link {
+    display: none;
 }
 }
 
