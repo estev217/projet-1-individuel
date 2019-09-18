@@ -370,7 +370,7 @@ h1{
 
 @media screen and (max-width: 900px){
     .mobile_menu{
-        display: flex;
+        display: none;
         background: rgba(0,0,0,0);
         width:100%;
 		position:absolute;
