@@ -286,7 +286,7 @@ a:link{
     text-decoration: none;
 }
 
-.list li{
+.liste li{
     list-style-type: none;
     width: 20%;
     text-align: center;
@@ -356,7 +356,9 @@ h1{
         width:100%;
 		position:absolute;
 		top:120%;
-		left:0px;
+        left:0px;
+        padding: 0;
+        margin: 0;
     }
 
     .mobile_menu ul{
@@ -366,7 +368,32 @@ h1{
     }
 
     .mobile_menu a{
-        font-size: 3em;
+        font-family: 'Patrick Hand', cursive;
+        text-align: right;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        font-size: 1.2em;
+        text-shadow: -1px -1px 0 #000, 
+                  1px -1px 0 #000, 
+                     -1px 1px 0 #000, 
+                     1px 1px 0 #000;
+    }
+    
+    .mobile_list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .mobile_menu li{
+        list-style-type: none;
+        text-align: center;
+        width: 45%;
+        padding-right: 2%;
     }
 
     h1{
