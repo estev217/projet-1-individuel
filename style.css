@@ -251,7 +251,7 @@
   }
 
 
-nav{
+.menu{
     display: flex;
     justify-content: space-between;
     background-color: rgba(0,0,0,0);
@@ -271,7 +271,7 @@ nav{
     margin-top: 1vw;
 }
 
-ul{
+.active{
     display: flex;
     justify-content: flex-end;
     width: 70%;
@@ -282,7 +282,7 @@ a:link{
     text-decoration: none;
 }
 
-li{
+.liste li{
     list-style-type: none;
     width: 20%;
     text-align: center;
