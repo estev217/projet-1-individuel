@@ -29,6 +29,18 @@
         justify-content:       center;
     }
 
+    .bistro_regent {
+        background-image:      url('images/bistro_regent.jpg');
+    }
+
+    .steak_frites {
+        background-image:      url('images/steak_frites.jpg');
+    }
+
+    .bistro_bastide {
+        background-image:      url('images/bistro_bastide.jpg');
+    }
+
 /* PARALLAX RELATED CSS END HERE --------------------------------------------------------------- */
 
 /* TITLE RELATED CSS START HERE ---------------------------------------------------------------- */
@@ -46,6 +58,8 @@
     h3 {
         text-align:  center;
         padding:     0% 2% 0% 2%;
+        font-family: 'Butterfly Kids', cursive;
+        font-size: 2em;
     }
 
 /* TITLE RELATED CSS END HERE ------------------------------------------------------------------ */
@@ -64,18 +78,21 @@
         justify-content: space-between;
     }
 
-    p {
+    article p {
         text-align:      center;
         padding-left:    5%;
         padding-right:   5%;
+        font-family: 'Patrick Hand', cursive;
+        font-size: 1.3em;
     }
 
     /* IMAGE RELATED CSS START HERE */
 
     .div_img img {
-        width:  150px;
-        height: 150px;
-        padding-bottom: 8%;
+        width:  10em;
+        height: 10em;
+        border-style: solid;
+        border-width: 1px;
     }
 
     /* IMAGE RELATED CSS END HERE */
@@ -108,6 +125,9 @@
 
     .div_iframe iframe {
         display: none;
+    }
+
+    .div_iframe a {
     }
 
 /* MAP SECTION RELATED CSS END HERE ------------------------------- */
@@ -145,7 +165,11 @@
 
         /* IMAGE RELATED CSS START HERE */
 
-            img {
+            .div_img img {
+                border-radius: 50%;
+                border-width: 3px;
+                width:  20em;
+                height: 20em;
                 padding-bottom: 0%;
             }
 
@@ -155,6 +179,9 @@
 
             .div_iframe iframe {
             display: inline;
+            border-style: solid;
+            border-width: 1px;
+            border-color: red;
             }
 
             .div_iframe a {
