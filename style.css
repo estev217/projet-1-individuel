@@ -4,12 +4,13 @@
 
     html {
         scroll-behavior:    smooth;
-        background-color:   rgb(12,15,12);
+        background-color:   rgb(66, 25, 25);
         color:              white;
     }
 
     body {
         margin:             0px;
+        overflow-X: hidden;
     }
 
 /* GLOBAL CSS END HERE ------------------------------------------------------------------------- */
@@ -46,8 +47,8 @@
 /* TITLE RELATED CSS START HERE ---------------------------------------------------------------- */
 
     h2 {
-        font-family: 'Butterfly Kids', cursive;
-        font-size:   3em;
+font-family: 'Butterfly Kids', cursive;
+font-size:   3em;
         text-align:  center;
         text-shadow: -1px -1px 0 #000, 
                      1px -1px 0 #000, 
@@ -114,6 +115,7 @@
 
     form * {
         margin:         1%;
+        font-family:    'Patrick Hand', cursive;
     }
 
     form textarea {
@@ -121,7 +123,11 @@
     }
 
     form button {
-        margin:         3% 0% 3% 50%;
+        margin:         3% 1% 3% 70%;
+        font-family:    'Butterfly Kids', cursive;
+        color:        black;
+        font-weight: bold;
+        font-size: 1.8em;
     }
 
 /* FORM RELATED CSS END HERE ------------------------------------------------------------------- */
@@ -223,6 +229,19 @@
                 margin-right: 10px;
             }
 
+            form button {
+                margin: 3% 0% 3% 70%;
+                position: relative;
+                -webkit-transition-duration: 2s;
+                transition-duration: 2s;
+            }
+
+            form button:hover {
+                background-color: white;
+            }
+
+
+
         /* FORM RELATED CSS END HERE -------------------------------- */
 
     }
@@ -234,6 +253,10 @@
 /* START Kévin */
 
 /* Home section code  */
+.mobile_menu{
+    display: none;
+}
+
 .section_home {
     height: 100vh;
     background-image: url(https://www.au-cheval-noir.restaurant/wp-content/uploads/2018/12/Restaurant-Au-Cheval-Noir-Herrlisheim_Photos-17.jpg);
@@ -271,7 +294,7 @@
     margin-top: 1vw;
 }
 
-.active{
+.menu .active{
     display: flex;
     justify-content: flex-end;
     width: 70%;
@@ -290,23 +313,21 @@ a:link{
     opacity: 1;
 }
 
-a{
+h1 a, .liste a{
     color: white;
-    transition: transform .2s;
     width: 100px;
     text-shadow: -1px -1px 0 #000, 
-                     1px -1px 0 #000, 
+                  1px -1px 0 #000, 
                      -1px 1px 0 #000, 
                      1px 1px 0 #000;
 }
 
-li div{
-    transition: transform .2s;
+.liste li{
+    transition:all 0.2s ease;
 }
 
-li div:hover{
+.liste li:hover{
     transform:scale(1.10) translate(0px, 5px);
-    translate: 100px;
 }
 
 h1{
@@ -348,6 +369,51 @@ h1{
 }
 
 @media screen and (max-width: 900px){
+    .mobile_menu{
+        display: none;
+        background: rgba(0,0,0,0);
+        width:100%;
+		position:absolute;
+		top:120%;
+        left:0px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile_menu ul{
+        background: rgba(0,0,0,0);
+        position:absolute;
+        margin: 0;
+    }
+
+    .mobile_menu a{
+        font-family: 'Patrick Hand', cursive;
+        text-align: right;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        font-size: 1.2em;
+        text-shadow: -1px -1px 0 #000, 
+                  1px -1px 0 #000, 
+                     -1px 1px 0 #000, 
+                     1px 1px 0 #000;
+    }
+    
+    .mobile_list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .mobile_menu li{
+        list-style-type: none;
+        text-align: center;
+        width: 45%;
+        padding-right: 2%;
+    }
 
     h1{
         font-size: 1.7em;
@@ -391,7 +457,7 @@ h1{
         margin-top: 5px;
     }
 
-	.menu ul {
+	.active {
 		width:100%;
 		position:absolute;
 		top:120%;
@@ -444,45 +510,77 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(56, 47, 47);
-    height: 300px;
+    background-color: rgb(46, 18, 18);
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-size: 17px;
 }
-.footer a:hover {
-    text-decoration: underline overline white;
-}
 .footer a, footer p {
-    text-decoration: none;
     color: rgb(177, 177, 177);
 }
-.twitter-icon img{
-    height: 50px;
-    width: 50px;
+.desktop-footer {
+    display: none;
 }
-.facebook-icon img{
-    height: 50px;
-    width: 50px;
+.mobile-footer {
+    padding: 5px;
+}
+.footer a {
+    width: 200px;
+}
+.footer-address {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+.twitter-icon img {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.facebook-icon img {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.app-link {
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (min-width:961px) {
 .footer {
-    font-size: 20px;
-    height: 150px;
+    font-size: 17px;
+    height: 200px;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 0px 10px 20px 10px;
 }
-.strong-text {
-    font-weight: bold;
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin-top: 20px;
 }
 .emphasis-text {
     font-style: italic;
+}
+.desktop-footer {
+    display: contents;
+}
+.mobile-footer {
+    padding: 0px;
+}
+.desktop-version {
+    display: none;
 }
 .twitter-icon img {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 .twitter-icon:hover img {
     -webkit-transform: rotate(-15deg);
     transform: rotate(-15deg);
@@ -491,10 +589,12 @@ h1{
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 .facebook-icon:hover img {
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+.app-link {
+    display: none;
 }
 }
 
