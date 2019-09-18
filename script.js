@@ -5,7 +5,6 @@ function changePlace() {
 
 function hiddenMenu(){
     var x = document.getElementById("mobile_menu"); 
-    console.log('ok')
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
