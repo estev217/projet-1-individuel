@@ -4,8 +4,9 @@
 
     html {
         scroll-behavior:    smooth;
-        background-color:   rgb(66, 25, 25);
-        color:              white;
+        background-image: linear-gradient(to bottom, rgb(218, 72, 72), rgb(36, 13, 13));
+        color:              white; 
+        
     }
 
     body {
@@ -273,7 +274,6 @@ font-size:   3em;
     display: none;
   }
 
-
 .menu{
     display: flex;
     justify-content: space-between;
@@ -283,7 +283,30 @@ font-size:   3em;
     position: fixed;
     width: 100%;
 }
-
+.addings .french-map {
+    align-self: flex-end;
+    margin-right: 105px;
+    height: 400px;
+}
+.addings .feedbacks{
+    height: 200px;
+}
+.addings {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.addings .feedbacks .feed{
+    font-size: 17px;
+    padding: 20px;
+    align-self: top;
+    background-color: rgba(255, 255, 255, 0.658);
+    color: black;
+    border-radius: 20px 20px;
+}
 .liste{
     width: 95%;
     height: 100%;
@@ -414,7 +437,9 @@ h1{
         width: 45%;
         padding-right: 2%;
     }
-
+    .addings {
+        display: none;
+    }
     h1{
         font-size: 1.7em;
         width: 55%;
@@ -510,7 +535,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(46, 18, 18);
+    background-color: rgb(22, 8, 8);
     padding-top: 15px;
     padding-bottom: 10px;
     font-size: 17px;
