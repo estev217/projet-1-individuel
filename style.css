@@ -329,7 +329,7 @@ a:link{
 
 .liste li{
     list-style-type: none;
-    width: 21%;
+    width: 22%;
     text-align: center;
     font-size: 2.1vw;
     opacity: 1;
@@ -356,8 +356,8 @@ h1 a, .liste a{
 }
 
 h1{
-    width: 20%;
-    font-size: 4vw;
+    width: 27%;
+    font-size: 3.4em;
     padding-left: 1%;
     margin-top: 0;
     justify-content: flex-start;
@@ -429,7 +429,7 @@ h1{
 
     h1{
         font-size: 1.7em;
-        width: 55%;
+        width: 100%;
         padding-left: 2%;
     }
     .menu{
@@ -449,8 +449,7 @@ h1{
     }
 
     .section_home{
-        background-size: cover;
-        height: 30vh;
+        height: 50vh;
     }
 
 	.menu ul.active {
@@ -459,7 +458,7 @@ h1{
     
     .titre{
         width: 100%;
-        font-size: 1.4em;
+        font-size: 1.7em;
         margin-top: 5px;
     }
 
