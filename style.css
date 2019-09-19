@@ -359,7 +359,7 @@
 /* Home section code  */
 
 .list1, .feed, .map{
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-name: glissement;
     animation-iteration-count: 1;
 }
@@ -370,7 +370,7 @@
 
 @keyframes glissement {
     from {
-        margin-top: 300%;
+        margin-top: 600%;
         
     }
   
