@@ -177,10 +177,6 @@
 
 /* MAP SECTION RELATED CSS START HERE ---------------------------------------------------------- */
 
-    .div_iframe {
-        padding-bottom:       3%;
-    }
-
     .div_iframe iframe {
         display:              none;
     }
