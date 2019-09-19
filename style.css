@@ -406,28 +406,22 @@
     color: black;
     border-radius: 20px 20px;
 }
-.liste{
+.active{
     width: 95%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
     align-items: center;
-    margin-top: 1vw;
+    margin-top: 0;
 }
 
-.menu .active{
-    display: flex;
-    justify-content: flex-end;
-    width: 70%;
-    height: 2%;
-}
 
 a:link{
     text-decoration: none;
 }
 
-.liste li{
+.active li {
     list-style-type: none;
     width: 22%;
     text-align: center;
@@ -436,7 +430,7 @@ a:link{
     transition:all 0.2s ease;
 }
 
-h1 a, .liste a{
+h1 a, .active li a{
     color: white;
     width: 100px;
     text-shadow: -1px -1px 0 #000, 
@@ -445,18 +439,18 @@ h1 a, .liste a{
                      1px 1px 0 #000;
 }
 
-.liste a{
+.active  li a{
     font-family: 'Patrick Hand', cursive;
     font-size: 2vw;
 }
 
 
-.liste li:hover{
+.active li:hover{
     transform:scale(1.10) translate(0px, 5px);
 }
 
 h1{
-    width: 27%;
+    width: 40%;
     font-size: 3.4em;
     padding-left: 1%;
     margin-top: 0;
@@ -486,13 +480,14 @@ h1{
         background: rgba(0,0,0,0);
         width:100%;
 		position:absolute;
-		top:120%;
-        left:0px;
+		top:90%;
+        left: 51%;
         padding: 0;
         margin: 0;
+        justify-content: flex-end;
     }
 
-    .mobile_menu ul{
+    .mobile_menu {
         background: rgba(0,0,0,0);
         position:absolute;
         margin: 0;
@@ -510,14 +505,19 @@ h1{
                      -1px 1px 0 #000, 
                      1px 1px 0 #000;
     }
+
+    .titre{
+        width: 30%;
+    }
     
-    .mobile_list{
+    .mobile_menu_li{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-left: 0;
         margin-top: -20px;
+        justify-content: flex-end;
     }
 
     .mobile_menu li{
@@ -558,7 +558,7 @@ h1{
 		display:none;
     }
     
-    .titre{
+    .active{
         width: 100%;
         font-size: 1.7em;
         margin-top: 5px;
