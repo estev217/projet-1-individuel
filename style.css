@@ -4,7 +4,7 @@
 
     html {
         scroll-behavior:    smooth;
-        background-color:   rgb(66, 25, 25);
+        background-color:   rgb(65, 25, 25);
         color:              white;
     }
 
@@ -96,6 +96,38 @@
     }
     
 /* SECTION AND ARTICLE RELATED CSS END HERE ---------------------------------------------------- */
+
+/* TOGGLE TEXT RELATED CSS START HERE ---------------------------------------------------------- */
+
+    #more_1 {
+        display: none;
+    }
+
+    #more_2 {
+        display: none;
+    }
+
+    #more_3 {
+        display: none;
+    }
+
+    .button_toggle {
+        background-color: rgba(0, 0, 0, 0);
+        border-style: none;
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .button_toggle:hover {
+        font-weight: bolder;
+        text-shadow:          -1px -1px 0 lightgray, 
+        1px -1px 0 lightgray, 
+        -1px 1px 0 lightgray, 
+        1px 1px 0 lightgray;
+    }
+
+/* TOGGLE TEXT RELATED CSS END HERE ------------------------------------------------------------ */
 
 /* IMAGE RELATED CSS START HERE ---------------------------------------------------------------- */
 
@@ -208,6 +240,51 @@
             }
 
         /* TITLE RELATED CSS END HERE */
+
+        /* TOGGLE TEXT RELATED CSS START HERE */
+
+            #dots_1 {
+                display: none;
+            }
+
+            #dots_2 {
+                display: none;
+            }
+
+            #dots_3 {
+                display: none;
+            }
+
+            #more_1 {
+                display: inline;
+            }
+
+            #more_2 {
+                display: inline;
+            }
+
+            #more_3 {
+                display: inline;
+            }
+
+            .button_toggle {
+                display: none;
+            }
+
+        /* TOGGLE TEXT RELATED CSS END HERE */
+
+        /* IMAGE RELATED CSS START HERE */
+
+            .div_img img {
+                width:         10em;
+                height:        10em;
+                border-style:  solid;
+                border-width:  1px;
+                margin-bottom: 10%;
+            }
+
+        /* IMAGE RELATED CSS END HERE */
+
 
         /* IMAGE RELATED CSS START HERE */
 
