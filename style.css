@@ -177,12 +177,12 @@
 
 /* MAP SECTION RELATED CSS START HERE ---------------------------------------------------------- */
 
-    .div_iframe {
-        padding-bottom:       3%;
-    }
-
     .div_iframe iframe {
         display:              none;
+    }
+
+    .div_iframe {
+        padding-bottom: 5%;
     }
 
     .div_iframe a {
@@ -302,6 +302,10 @@
 
         /* MAP SECTION CSS START HERE ------------------------------- */
 
+            .div_iframe {
+                padding-bottom: 0%;
+            }
+
             .div_iframe iframe {
             display:      inline;
             border-style: solid;
@@ -401,7 +405,6 @@
 .addings .feedbacks .feed{
     font-size: 17px;
     padding: 20px;
-    align-self: top;
     background-color: rgba(255, 255, 255, 0.658);
     color: black;
     border-radius: 20px 20px;
