@@ -329,10 +329,11 @@ a:link{
 
 .liste li{
     list-style-type: none;
-    width: 20%;
+    width: 21%;
     text-align: center;
     font-size: 2.1vw;
     opacity: 1;
+    transition:all 0.2s ease;
 }
 
 h1 a, .liste a{
@@ -344,9 +345,11 @@ h1 a, .liste a{
                      1px 1px 0 #000;
 }
 
-.liste li{
-    transition:all 0.2s ease;
+.liste a{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2vw;
 }
+
 
 .liste li:hover{
     transform:scale(1.10) translate(0px, 5px);
@@ -358,19 +361,6 @@ h1{
     padding-left: 1%;
     margin-top: 0;
     justify-content: flex-start;
-}
-
-
-.title{
-    position: absolute;
-    top: 0%;
-    left: 10%;
-    text-align: left;
-    font-size: 1vw;
-    font-family: 'Butterfly Kids', cursive;
-    font-weight: bold;
-    color: white;
-    padding-left: 1%;
 }
 
 .section_home h2, .subtitle{
@@ -390,7 +380,7 @@ h1{
     font-size: 5em;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 961px){
     .mobile_menu{
         display: none;
         background: rgba(0,0,0,0);
@@ -443,7 +433,6 @@ h1{
         padding-left: 2%;
     }
     .menu{
-        display: flex;
         justify-content: space-between;
         height: 55px;
     }
@@ -462,11 +451,6 @@ h1{
     .section_home{
         background-size: cover;
         height: 30vh;
-    }
-
-    .title{
-        font-size: 1.2em;
-        left: 5%;
     }
 
 	.menu ul.active {
@@ -501,7 +485,7 @@ h1{
 	}
 
 	.toggle-nav {
-        padding:10px 4% 0 0;
+        padding:10px 20px 0 0;
         width: 5%;
         height: 5%;
 		display:inline-block;
