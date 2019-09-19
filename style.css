@@ -181,6 +181,10 @@
         display:              none;
     }
 
+    .div_iframe {
+        padding-bottom: 5%;
+    }
+
     .div_iframe a {
         color:              white;
         text-decoration-line: none;
@@ -297,6 +301,10 @@
     /* IMAGE RELATED CSS END HERE */
 
         /* MAP SECTION CSS START HERE ------------------------------- */
+
+            .div_iframe {
+                padding-bottom: 0%;
+            }
 
             .div_iframe iframe {
             display:      inline;
