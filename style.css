@@ -357,6 +357,29 @@
 /* START Kévin */
 
 /* Home section code  */
+
+.list1, .feed, .map{
+    animation-duration: 5s;
+    animation-name: glissement;
+    animation-iteration-count: 1;
+}
+
+.map{
+    margin-top: 2%;
+}
+
+@keyframes glissement {
+    from {
+        margin-top: 300%;
+        
+    }
+  
+    to {
+        margin-top: 0%, 10%;
+    
+    }
+}
+
 .mobile_menu{
     display: none;
 }
@@ -388,7 +411,6 @@
 }
 .addings .french-map {
     align-self: flex-end;
-    margin-right: 105px;
     height: 400px;
 }
 .addings .feedbacks{
