@@ -370,14 +370,14 @@
 
 @keyframes bounce {
     from {
-        margin-left: 600%;
+        margin-left: 500%;
         width: 92%;
         position: relative;
         
     }
   
     to {
-        margin-left: 34%;
+        margin-left: 30.5%;
         width: 92%;
         position: relative;
     
@@ -451,11 +451,14 @@
     align-items: center;
 }
 .addings .feedbacks .feed{
-    font-size: 16px;
+    font-size: 15px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.658);
     color: black;
     border-radius: 20px 20px;
+}
+.feedbacks{
+    width: 33%;
 }
 .active{
     width: 95%;
