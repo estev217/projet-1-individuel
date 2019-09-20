@@ -32,9 +32,9 @@ L'équipe a choisi de réaliser son application pour le restaurant Bistro Régen
 
 Le travail a été réparti comme suit : 
 
-* Kévin : navbar & section introductive
-* Estevao : footer & liens
-* David : sections principales
+* Kévin : navbar & section introductive / js menu burger
+* Estevao : footer & liens / couleurs & textes 
+* David : sections principales / css / js bouton 
 
 ## Commentaires
 

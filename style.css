@@ -4,7 +4,7 @@
 
     html {
         scroll-behavior:    smooth;
-        background-image: linear-gradient(to bottom, rgb(218, 72, 72), rgb(36, 13, 13));
+        background-image:   linear-gradient(to bottom, rgb(218, 72, 72), rgb(36, 13, 13));
         color:              white; 
         
     }
@@ -101,31 +101,31 @@
 /* TOGGLE TEXT RELATED CSS START HERE ---------------------------------------------------------- */
 
     #more_1 {
-        display: none;
+        display:            none;
     }
 
     #more_2 {
-        display: none;
+        display:            none;
     }
 
     #more_3 {
-        display: none;
+        display:            none;
     }
 
     .button_toggle {
         background-color: rgba(0, 0, 0, 0);
-        border-style: none;
-        color: white;
-        font-size: 1.2em;
-        font-weight: bold;
+        border-style:       none;
+        color:            white;
+        font-size:          1.2em;
+        font-weight:        bold;
     }
 
     .button_toggle:hover {
-        font-weight: bolder;
-        text-shadow:          -1px -1px 0 lightgray, 
-        1px -1px 0 lightgray, 
-        -1px 1px 0 lightgray, 
-        1px 1px 0 lightgray;
+        font-weight:        bolder;
+        text-shadow:        -1px -1px 0 lightgray, 
+        1px -1px 0        lightgray, 
+        -1px 1px 0        lightgray, 
+        1px 1px 0         lightgray;
     }
 
 /* TOGGLE TEXT RELATED CSS END HERE ------------------------------------------------------------ */
@@ -511,7 +511,7 @@ h1{
     justify-content: flex-start;
 }
 
-.subtitle{;
+.subtitle{
     height: 10%;
     text-align: left;
     font-family: 'Butterfly Kids', cursive;
