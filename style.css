@@ -511,7 +511,7 @@ h1{
     justify-content: flex-start;
 }
 
-.subtitle{;
+.subtitle{
     height: 10%;
     text-align: left;
     font-family: 'Butterfly Kids', cursive;
@@ -747,5 +747,11 @@ h1{
 }
 
 /* END Estevao */
+.container {
+    text-align:  center;
+    padding-top: 60px;
+
+    font-size:   2em;
+}
 
 /* /!\ COMMENCER PAR LA VERSION MOBILE */
