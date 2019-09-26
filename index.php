@@ -120,6 +120,38 @@
             </article>
         </section>
 
+
+    <!- AJOUT SECTION POUR CHALLENGE PHP -->
+
+        <div class="parallax bistro_regent">
+            <h2>Notre carte de bières</h2>
+        </div>
+
+        <section>
+            <article id="who" class="article_even">
+                <div class="div_img">
+                    <img src="images/BIERES" alt="Bière">
+                </div>
+                <div class="div_txt">
+                    <h3>Une variété de bières pour tous les goûts</h3>
+                    <p>
+                        Au Bistro Régent Stalingrad vous pourrez profiter d'une grande variété
+                        <span id="dots_1">...</span>
+                        <span id="more_1">de bières. Bières blondes, blanches, brunes ou ambrées, faites votre choix!</span>
+                        <button class="button_toggle" onclick="toggleOne()" id="btn_1">&#x2193;</button>
+                    </p>
+                    <div>
+                        <?php include("array.php"); ?>
+                    </div>
+                    <p><i>L'abus d'alcool est dangereux pour la santé. A consommer avec modération.</i></p>
+                </div>
+            </article>
+        </section>
+
+    <!- FIN DE SECTION POUR CHALLENGE PHP -->
+
+
+
         <div class="parallax bistro_bastide">
             <h2>Où nous retrouver</h2>
         </div>
