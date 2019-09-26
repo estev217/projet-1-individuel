@@ -12,29 +12,10 @@
         <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet"> 
     </head>
-
     <body>
-
     <!-- START navbar -->
-    
-    <nav class="menu">
-        <h1><a class="titre" href="#">Bistro Régent</a></h1>
-        <ul class="active"> 
-            <li class="list1"><a href="#who">Qui sommes nous ?</a></li>
-            <li class="list1"><a href="#menu">Notre carte</a></li>
-            <li class="list1"><a href="#where">Où sommes nous ?</a></li>
-            <li class="list1"><a href="#contact">Contact</a></li>
-        </ul>
 
-        <a class="toggle-nav" href="#burger" onclick=hiddenMenu()>&#9776;</a>
-        
-        <ul class="mobile_menu" id="mobile_menu">
-            <li><a href="#who">Qui sommes nous ?</a></li>
-            <li><a href="#menu">Notre carte</a></li>
-            <li><a href="#where">Où sommes nous ?</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <?php include("_header.php"); ?>
 
     <!-- END navbar -->
 
@@ -169,20 +150,20 @@
 
     <!-- START form -->
 
-            <form id ="contact">
+            <form id ="contact" action="/form.php" method="get">
                 <label for="name">Nom : </label>
-                <input type="text" name="name" id="name" placeholder="Votre nom">
+                    <input type="text" name="name" id="name" placeholder="Votre nom">
                 <label for="email">Email : </label>
-                <input type="text" name="email" id="email" placeholder="Votre email">
+                    <input type="text" name="email" id="email" placeholder="Votre email">
                 <label for="object">Objet : </label>
-                <select name="object" id="object">
-                    <option value="1">Réservation de salle</option>
-                    <option value="2">Question sur les produits</option>
-                    <option value="3">Autre</option>
-                </select>
+                    <select name="object" id="object">
+                        <option value="réservation">Réservation de salle</option>
+                        <option value="demande d'information sur les produits">Question sur les produits</option>
+                        <option value="question">Question générale</option>
+                    </select>
                 <label for="message">Message : </label>
-                <textarea name="message" id="message" placeholder="Votre message ici..."></textarea>
-                <button type="button" id="formbutton" onclick=changePlace()>Envoyer</button>
+                    <textarea name="message" id="message" placeholder="Votre message ici..."></textarea>
+                <button type="submit" id="formbutton" onclick=changePlace()>Envoyer</button>
             </form>
 
         <div class="parallax"></div>
@@ -191,32 +172,10 @@
 
     <!-- START footer -->
 
-    <footer class="footer">
-        <div class="links">
-            <a href="#" class="desktop-footer"><b>Devenir franchisé</b></a>
-            <a href="#" class="desktop-footer">Recrutement</a>
-            <a href="#where" class="desktop-footer"><b>Politique de confidentialité</b></a>
-            <a href="#contact" class="desktop-footer">Mentions légales</a>
-            <a href="#" class="mobile-footer"><b>Plan du site</b></a>
-            <a href="#" class="mobile-footer">FAQ</a>
-            <a href="#" class="desktop-version"><b>Version classique</b></a>
-        </div>
-        <div class="footer-address">
-            <p>Bistro Régent Stalingrad:</p>
-            <p>11 place Stalingrad</p>
-            <p>33100 Bordeaux</p> 
-            <p>05.57.61.53.30</p>
-        </div>
-        <p>Nous suivre sur les réseaux sociaux:</p>
-        <div>  
-            <a href="https://www.twitter.com" class="twitter-icon"><img src="https://www.iconsdb.com/icons/preview/royal-blue/twitter-xxl.png" alt="Submit Form"/></a>
-            <a href="https://www.facebook.com" class="facebook-icon"><img src="https://www.fete-du-citron.com/wp-content/uploads/2014/07/facebook-icon.png" alt="Submit Form"/></a>
-        </div>
-            <a href="#" class="app-link">Téléchargez l'application !</a>
-    </footer>
+    <?php include("_footer.php"); ?>
 
     <!-- END footer -->
-        <script src="script.js"></script>
+    <script src="script.js"></script>
     </body>
 
 </html>

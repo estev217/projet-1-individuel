@@ -747,5 +747,10 @@ h1{
 }
 
 /* END Estevao */
+.container {
+    text-align:  center;
+    padding-top: 60px;
+    font-size:   2em;
+}
 
 /* /!\ COMMENCER PAR LA VERSION MOBILE */
